@@ -32,6 +32,11 @@ public class EjerciciosPropuestos {
 		System.out.println("Me gusta la programación");
 		System.out.println("Cada dia mas");
 	}
+	public static void ejercicio8() {
+		char caracter = (char) ((Math.random()*26)+65);
+		System.out.println(caracter);
+	
+	}
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
