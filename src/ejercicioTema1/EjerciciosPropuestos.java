@@ -35,7 +35,7 @@ public class EjerciciosPropuestos {
 	public static void ejercicio8() {
 		char caracter = (char) ((Math.random()*26)+65);
 		char[] vocales = { 'A', 'E', 'I', 'O', 'U' };
-		
+		char[] consonantes = {'B','C','D','F','G','H','J','K','L','M','N','P','Q','R','S','T','V','W','X','Y','Z'};
 		System.out.println(caracter);
 		
 		
@@ -43,6 +43,11 @@ public class EjerciciosPropuestos {
 			if (vocal == caracter )
 			System.out.println("Es una vocal");
 		}
+		for (int consonante : consonantes) {
+			if (consonante == caracter )
+			System.out.println("Es una consonante");
+		}
+		
 	}
 	
 	public static void main(String[] args) {
