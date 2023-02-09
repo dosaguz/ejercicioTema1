@@ -37,8 +37,7 @@ public class EjerciciosPropuestos {
 		char[] vocales = { 'A', 'E', 'I', 'O', 'U' };
 		char[] consonantes = {'B','C','D','F','G','H','J','K','L','M','N','P','Q','R','S','T','V','W','X','Y','Z'};
 		System.out.println(caracter);
-		
-		
+
 		for (int vocal : vocales) {
 			if (vocal == caracter )
 			System.out.println("Es una vocal");
