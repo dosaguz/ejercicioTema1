@@ -49,7 +49,21 @@ public class EjerciciosPropuestos {
 		}
 		
 	}
-	
+	public static void ejercicio8_2() {
+		char caracter = (char) ((Math.random()*26)+65);
+		char[] vocales = { 'A', 'E', 'I', 'O', 'U' };
+		String s = "Es una consonante";
+		System.out.println(caracter);
+		
+		
+		for (int vocal : vocales) {
+			if (vocal == caracter ) {
+				s = "Es una vocal";
+			}
+		}
+		System.out.println(s);
+		
+	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		//ejercicio1();
@@ -57,7 +71,7 @@ public class EjerciciosPropuestos {
 		//ejercicio3();
 		//ejercicio5();
 		//ejercicio7();
-		ejercicio8();
+		ejercicio8_2();
 	}
 
 }
