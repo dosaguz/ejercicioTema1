@@ -49,6 +49,10 @@ public class EjerciciosPropuestos {
 		
 	}
 	
+	public static void ejercicio11() {
+		int t = 60;
+		System.out.println("Son "+ t/3600 +"h, " + ((t%3600)/60) +" min y "+ ((t%3600)%60) +" s.");
+	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		//ejercicio1();
@@ -56,7 +60,8 @@ public class EjerciciosPropuestos {
 		//ejercicio3();
 		//ejercicio5();
 		//ejercicio7();
-		ejercicio8();
+		//ejercicio8();
+		ejercicio11();
 	}
 
 }
