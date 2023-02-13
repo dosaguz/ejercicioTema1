@@ -37,8 +37,7 @@ public class EjerciciosPropuestos {
 		char[] vocales = { 'A', 'E', 'I', 'O', 'U' };
 		char[] consonantes = {'B','C','D','F','G','H','J','K','L','M','N','P','Q','R','S','T','V','W','X','Y','Z'};
 		System.out.println(caracter);
-		
-		
+
 		for (int vocal : vocales) {
 			if (vocal == caracter )
 			System.out.println("Es una vocal");
@@ -49,6 +48,12 @@ public class EjerciciosPropuestos {
 		}
 		
 	}
+
+	
+	public static void ejercicio11() {
+		int t = 60;
+		System.out.println("Son "+ t/3600 +"h, " + ((t%3600)/60) +" min y "+ ((t%3600)%60) +" s.");
+
 	public static void ejercicio8_2() {
 		char caracter = (char) ((Math.random()*26)+65);
 		char[] vocales = { 'A', 'E', 'I', 'O', 'U' };
@@ -63,6 +68,7 @@ public class EjerciciosPropuestos {
 		}
 		System.out.println(s);
 		
+
 	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -71,6 +77,9 @@ public class EjerciciosPropuestos {
 		//ejercicio3();
 		//ejercicio5();
 		//ejercicio7();
+		//ejercicio8();
+		ejercicio11();
+
 		ejercicio8_2();
 	}
 
