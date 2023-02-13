@@ -48,10 +48,27 @@ public class EjerciciosPropuestos {
 		}
 		
 	}
+
 	
 	public static void ejercicio11() {
 		int t = 60;
 		System.out.println("Son "+ t/3600 +"h, " + ((t%3600)/60) +" min y "+ ((t%3600)%60) +" s.");
+
+	public static void ejercicio8_2() {
+		char caracter = (char) ((Math.random()*26)+65);
+		char[] vocales = { 'A', 'E', 'I', 'O', 'U' };
+		String s = "Es una consonante";
+		System.out.println(caracter);
+		
+		
+		for (int vocal : vocales) {
+			if (vocal == caracter ) {
+				s = "Es una vocal";
+			}
+		}
+		System.out.println(s);
+		
+
 	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -62,6 +79,8 @@ public class EjerciciosPropuestos {
 		//ejercicio7();
 		//ejercicio8();
 		ejercicio11();
+
+		ejercicio8_2();
 	}
 
 }
