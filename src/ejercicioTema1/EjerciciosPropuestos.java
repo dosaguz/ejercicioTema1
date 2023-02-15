@@ -37,8 +37,7 @@ public class EjerciciosPropuestos {
 		char[] vocales = { 'A', 'E', 'I', 'O', 'U' };
 		char[] consonantes = {'B','C','D','F','G','H','J','K','L','M','N','P','Q','R','S','T','V','W','X','Y','Z'};
 		System.out.println(caracter);
-		
-		
+
 		for (int vocal : vocales) {
 			if (vocal == caracter )
 			System.out.println("Es una vocal");
@@ -49,6 +48,13 @@ public class EjerciciosPropuestos {
 		}
 		
 	}
+
+	
+	public static void ejercicio11() {
+		int t = 60;
+		System.out.println("Son "+ t/3600 +"h, " + ((t%3600)/60) +" min y "+ ((t%3600)%60) +" s.");
+	}
+
 	public static void ejercicio8_2() {
 		char caracter = (char) ((Math.random()*26)+65);
 		char[] vocales = { 'A', 'E', 'I', 'O', 'U' };
@@ -63,6 +69,53 @@ public class EjerciciosPropuestos {
 		}
 		System.out.println(s);
 		
+
+	}
+	public static void ejercicio12() {
+		int imp = 232, b500 = 0,b200 = 0,b100 = 0,b50 = 0,b20 = 0,b10 = 0,b5 = 0,resto = 0;
+		
+		System.out.println("Del importe: "+ imp);
+		
+		while (imp >= 5){
+			if (imp>500) {
+				b500+=1;
+				imp-=500;
+			}
+			else if(imp>=200){
+				b200+=1;
+				imp-=200;
+			}
+			else if(imp>=100){
+				b100+=1;
+				imp-=100;
+			}
+			else if(imp>=50){
+				b50+=1;
+				imp-=50;
+			}
+			else if(imp>=20){
+				b20+=1;
+				imp-=20;
+			}
+			else if(imp>=10){
+				b10+=1;
+				imp-=10;
+			}
+			else if(imp>=5){
+				b200+=1;
+				imp-=5;
+			}
+	}
+		resto = imp;
+
+		System.out.println("Billetes de 500: "+ b500);
+		System.out.println("Billetes de 200: "+ b200);
+		System.out.println("Billetes de 100: "+ b100);
+		System.out.println("Billetes de 50: "+ b50);
+		System.out.println("Billetes de 20: "+ b20);
+		System.out.println("Billetes de 10: "+ b10);
+		System.out.println("Billetes de 5: "+ b5);
+		System.out.println("Resto: "+ resto);
 	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -71,7 +124,10 @@ public class EjerciciosPropuestos {
 		//ejercicio3();
 		//ejercicio5();
 		//ejercicio7();
-		ejercicio8_2();
+		//ejercicio8();
+		ejercicio12();
+
+		//ejercicio8_2();
 	}
 
 }
